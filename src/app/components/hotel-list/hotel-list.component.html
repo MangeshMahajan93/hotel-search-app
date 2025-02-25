@@ -1,0 +1,19 @@
+<div class="container mt-4">
+    <h3>Available Hotels</h3>
+    <div *ngIf="hotels.length === 0" class="alert alert-info">No hotels found.</div>
+    <div class="row">
+      <div class="col-md-4 mb-3" *ngFor="let hotel of hotels">
+        <div class="card">
+          <img [src]="hotel.heroImage" class="card-img-top" alt="Hotel Image">
+          <div class="card-body">
+            <h5 class="card-title">{{ hotel.name }}</h5>
+            <p class="card-text">{{ hotel.address }}</p>
+            <p><strong>Rating:</strong> {{ hotel.starRating }} ⭐</p>
+            <p><strong>Price:</strong> ₹{{ hotel.rate.total }}</p>
+            <button class="btn btn-primary">Check Availability</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  

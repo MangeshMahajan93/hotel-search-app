@@ -1,0 +1,58 @@
+{
+	"info": {
+		"_postman_id": "95d4c492-e45a-40f0-8568-6aa70a85cbfa",
+		"name": "Singapur Hotel - Benzy Infotech",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "34621324"
+	},
+	"item": [
+		{
+			"name": "https://b2cdev.frappe.cloud/api/method/at_utils.akbar_travels_utils.commonApi.hotel.get_hotel_info",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2NWU1NjBjMmU2NTk5OTAxN2FjYTI0ODMiLCJ1bmlxdWVfbmFtZSI6I",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"location\": \"SIN\",\r\n  \"checkin_date\": \"20-01-2025\",\r\n  \"checkout_date\": \"22-02-2025\",\r\n  \"rooms\": 1,\r\n  \"guests\": 1\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://b2cdev.frappe.cloud/api/method/at_utils.akbar_travels_utils.commonApi.hotel.get_hotel_info",
+					"protocol": "https",
+					"host": [
+						"b2cdev",
+						"frappe",
+						"cloud"
+					],
+					"path": [
+						"api",
+						"method",
+						"at_utils.akbar_travels_utils.commonApi.hotel.get_hotel_info"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
